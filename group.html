@@ -2,17 +2,17 @@
 
 <html>
   <head>
-    <title>NCIP Open Source</title>
+    <title>LSST Code Repositories</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/grid.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <!-- Loading list of repos and groups from JSON files -->
-    <script type="text/javascript" src="ncip-group.json"></script>
-    <script type="text/javascript" src="ncip-repo.json"></script>
+    <script type="text/javascript" src="lsst-group.json"></script>
+    <script type="text/javascript" src="lsst-repo.json"></script>
     <script type="text/javascript" src="assets/jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="assets/strftime.js"></script>
-    <script type="text/javascript" src="assets/ncipnamespace.js"></script>
+    <script type="text/javascript" src="assets/lsstnamespace.js"></script>
 
     <script>
       var browserIsIELessThan10 = false;
@@ -24,14 +24,14 @@
     <script type="text/javascript">
     (function ($, undefined) {
 
-      var NCIPGlobal = window.NCIPGlobal;
+      var LSSTGlobal = window.LSSTGlobal;
 
-      NCIPGlobal.namespace('cache.repos');
-      NCIPGlobal.namespace('cache.reposDate');
-      NCIPGlobal.namespace('cache.members');
-      NCIPGlobal.namespace('cache.membersDate');
+      LSSTGlobal.namespace('cache.repos');
+      LSSTGlobal.namespace('cache.reposDate');
+      LSSTGlobal.namespace('cache.members');
+      LSSTGlobal.namespace('cache.membersDate');
 
-      var repoGroupName = NCIPGlobal.urlQueryString('name');
+      var repoGroupName = LSSTGlobal.urlQueryString('name');
 
       repoGroupName = unescape(repoGroupName);
 
@@ -57,7 +57,7 @@
 
         var reposInGroup = [];
 
-        var repoGroups = ncip_groups;
+        var repoGroups = lsst_groups;
 
         var repoGroup = repoGroups[repoGroupName];
 
@@ -80,12 +80,12 @@
 
             var matchedToGroup = false;
 
-            $.each(ncip_repos, function (i, ncip_repo) {
+            $.each(lsst_repos, function (i, lsst_repo) {
 
-              if( ncip_repo ) {
-                if( ncip_repo.full_name ) {
-                  if( repo.full_name === ncip_repo.full_name ) {
-                    if( ncip_repo.group === repoGroupName ) {
+              if( lsst_repo ) {
+                if( lsst_repo.full_name ) {
+                  if( repo.full_name === lsst_repo.full_name ) {
+                    if( lsst_repo.group === repoGroupName ) {
                       matchedToGroup = true;
                       }
                     }
@@ -143,25 +143,25 @@
           //
           var reposInGroup = selectReposFromGroup(repos,repoGroupName);
 
-          NCIPGlobal.addRecentlyUpdatedRepos(reposInGroup);
+          LSSTGlobal.addRecentlyUpdatedRepos(reposInGroup);
 
           addReposFromGroup(reposInGroup);
         }
 
 
-      NCIPGlobal.processReposCallback = processRepositoriesInGroup;
-      NCIPGlobal.processMembersCallback = processMembers;
+      LSSTGlobal.processReposCallback = processRepositoriesInGroup;
+      LSSTGlobal.processMembersCallback = processMembers;
 
-      NCIPGlobal.initializeCache();
-      NCIPGlobal.findAllOrgsFromReposCatalog(ncip_repos);
+      LSSTGlobal.initializeCache();
+      LSSTGlobal.findAllOrgsFromReposCatalog(lsst_repos);
 
       if ( browserIsIELessThan10 ) {
-        NCIPGlobal.getReposFromOneOrg   = NCIPGlobal.getReposFromOneOrgWithoutCORS;
-        NCIPGlobal.getMembersFromOneOrg = NCIPGlobal.getMembersFromOneOrgWithoutCORS;
+        LSSTGlobal.getReposFromOneOrg   = LSSTGlobal.getReposFromOneOrgWithoutCORS;
+        LSSTGlobal.getMembersFromOneOrg = LSSTGlobal.getMembersFromOneOrgWithoutCORS;
         }
 
-      NCIPGlobal.getReposFromAllOrgs();
-      NCIPGlobal.getMembersFromAllOrgs();
+      LSSTGlobal.getReposFromAllOrgs();
+      LSSTGlobal.getMembersFromAllOrgs();
 
     })(jQuery);
     </script>
@@ -169,43 +169,40 @@
   <body>
     <div id="wrapper" class="grid clearfix">
       <div id="main" class="grid-1">
-        <div id="logo"><h1>NCIP Open Source</h1></div>
-        <a href="http://ncip.github.io/">
-          <img src="images/logo.png" alt="NCIP Logo" height="200" width="200">
+        <div id="logo"><h1> LSST Code Repositories</h1></div>
+        <a href="http://lsst.github.io/">
+          <img src="images/logo.png" alt="LSST Logo" height="200" width="200">
         </a>
-        <h2>Supporting</h2>
-        <h2>Cancer Research</h2>
+        <h2>Large Synoptic</h2>
+        <h2>Survey Telescope</h2>
         <h2>with Open Source</h2>
-        <p>Visit <a href="http://ncip.nci.nih.gov/">ncip.nci.nih.gov</a></p>
-        <p><a href="https://github.com/NCIP/ncip.github.com/wiki/_pages">Wiki Pages</a></p>
+        <p>Visit <a href="http://lsst.org/">ncip.nci.nih.gov</a></p>
+        <p><a href="https://confluence.lsst.org">Wiki Pages</a></p>
       </div>
 
       <div class="grid grid-3">
         <div id="recently-updated" class="grid-2 omega header">
-          <h1>Recently updated <a href="https://github.com/ncip/repositories">View All on GitHub</a></h1>
+          <h1>Recently updated <a href="https://github.com/lsst/repositories">View All on GitHub</a></h1>
           <ol id="recently-updated-repos"></ol>
         </div>
 
         <div id="statistics" class="grid-1 alpha header">
           <h1>Statistics</h1>
           <p>
-            <a href="https://github.com/ncip/repositories"><span id="num-repos"><img src="images/spinner.gif" /></span> public repos</a>
+            <a href="https://github.com/lsst/repositories"><span id="num-repos"><img src="images/spinner.gif" /></span> public repos</a>
             <br>
-            <a href="https://github.com/ncip?tab=members"><span id="num-members"><img src="images/spinner.gif" /></span> members</a>
+            <a href="https://github.com/lsst?tab=members"><span id="num-members"><img src="images/spinner.gif" /></span> members</a>
           </p>
-          <p class="email"><a href="mailto:opensource@nci.nih.gov">opensource@nci.nih.gov</a></p>
+          <p class="email"><a href="mailto:lsst@lsst.org">lsst@lsst.org</a></p>
         </div>
       </div>
 
       <div class="grid grid-3">
-        <div id="category" class="grid-1 iota iotaleft categoryheader biology">
-          <h4>Cancer Biology and Genomics</h4>
+        <div id="category" class="grid-1 iota iotaleft categoryheader simulations">
+          <h4>Simulations</h4>
         </div>
-        <div id="category" class="grid-1 iota iotacenter categoryheader translational">
-          <h4>Clinical and Translational</h4>
-        </div>
-        <div id="category" class="grid-1 iota iotaright categoryheader semantics">
-          <h4>Semantics and Interoperability</h4>
+        <div id="category" class="grid-1 iota iotacenter categoryheader dm">
+          <h4>Data Management</h4>
         </div>
       </div>
 
