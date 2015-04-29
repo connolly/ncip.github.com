@@ -199,7 +199,6 @@ window.LSSTGlobal = (function () {
         page = page || 1;
 
         var uri = "https://api.github.com/orgs/" + org + "/repos?"
-                + "&access_token=b200f47521b2b51309a8baf7f3e5e2fdb73ab69a"
                 + "&per_page=100"
                 + "&page="+page;
 
