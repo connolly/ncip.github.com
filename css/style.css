@@ -220,7 +220,7 @@ li.repo h3 {
   border-right-color: #6aad2d;
 }
 
-.repo.science:after {
+.repo.telescope:after {
   border-right-color: #777777;
 }
 
@@ -234,7 +234,7 @@ div.categoryheader.dm {
   color: #6aad2d;
 }
 
-div.categoryheader.science {
+div.categoryheader.telescope {
   background: #777777;
   color: #777777;
 }
