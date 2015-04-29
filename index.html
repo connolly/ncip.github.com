@@ -12,7 +12,7 @@
     <script type="text/javascript" src="lsst-repo.json"></script>
     <script type="text/javascript" src="assets/jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="assets/strftime.js"></script>
-    <script type="text/javascript" src="assets/ncipnamespace.js"></script>
+    <script type="text/javascript" src="assets/lsstnamespace.js"></script>
 
     <script>
       var browserIsIELessThan10 = false;
@@ -45,7 +45,7 @@
         };
 
       function addGroups(repoGroups) {
-        var repoGroups = ncip_groups;
+        var repoGroups = lsst_groups;
 
         $(function () {
           $.each(repoGroups, function (i, group) {
@@ -85,8 +85,8 @@
         <h2>Supporting</h2>
         <h2>Cancer Research</h2>
         <h2>with Open Source and astronomy</h2>
-        <p>Visit <a href="http://lsst.org/">ncip.nci.nih.gov</a></p>
-        <p><a href="https://confluence.lsst.org">Wiki Pages</a></p>
+        <p>Visit <a href="http://lsst.org/">lsst.org</a></p>
+        <p><a href="https://confluence.lsstcorp.org">Wiki Pages</a></p>
       </div>
 
       <div class="grid grid-3">
@@ -113,7 +113,7 @@
         <div id="category" class="grid-1 iota iotacenter categoryheader simulations">
           <h4>Simulations</h4>
         </div>
-        <div id="category" class="grid-1 iota iotaright categoryheader science">
+        <div id="category" class="grid-1 iota iotaright c<ategoryheader science">
           <h4>Science</h4>
         </div>
       </div>
