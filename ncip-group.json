@@ -2,7 +2,7 @@ var ncip_groups = [
   {
     "name":"sims_catUtils",
     "description":"caGrid is a service-oriented platform that provides tools to integrate data, securely share data, and compose analysis pipelines",
-    "category":"semantics"
+    "category":"semantics","translational"
   },
   {
     "name":"caCORE",
