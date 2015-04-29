@@ -199,7 +199,7 @@ window.LSSTGlobal = (function () {
         page = page || 1;
 
         var uri = "https://api.github.com/orgs/" + org + "/repos?"
-                + "&access_token=745afa2c6eca2530df1574fcdce824a37b0da9f4"
+                + "&client_id=3fce760c92d369c66f91"
                 + "&per_page=100"
                 + "&page="+page;
 
@@ -377,7 +377,7 @@ window.LSSTGlobal = (function () {
   that.getMembersFromOneOrg = function (org) {
 
       var uri = 'https://api.github.com/orgs/' + org + '/members?'
-                + "&access_token=745afa2c6eca2530df1574fcdce824a37b0da9f4";
+                + "&client_id=3fce760c92d369c66f91";
 
       var lastMemberDateChange = LSSTGlobal.getLastMembersChangeDateInCache(org);
 
@@ -505,7 +505,7 @@ window.LSSTGlobal = (function () {
 
         var uri = "https://api.github.com/orgs/" + org + "/members?"
                 + "&callback=?"
-                + "&access_token=745afa2c6eca2530df1574fcdce824a37b0da9f4";
+                + "&client_id=3fce760c92d369c66f91";
 
         $.getJSON(uri, function (result) {
 
@@ -529,7 +529,7 @@ window.LSSTGlobal = (function () {
                 + "&callback=?"
                 + "&per_page=100"
                 + "&page="+page
-                + "&access_token=745afa2c6eca2530df1574fcdce824a37b0da9f4";
+                + "&access_<=745afa2c6eca2530df1574fcdce824a37b0da9f4";
 
         $.getJSON(uri, function (result) {
 
