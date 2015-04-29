@@ -220,7 +220,7 @@ li.repo h3 {
   border-right-color: #6aad2d;
 }
 
-.repo.semantics:after {
+.repo.science:after {
   border-right-color: #777777;
 }
 
@@ -234,7 +234,7 @@ div.categoryheader.dm {
   color: #6aad2d;
 }
 
-div.categoryheader.semantics {
+div.categoryheader.science {
   background: #777777;
   color: #777777;
 }
