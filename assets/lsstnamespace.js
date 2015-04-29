@@ -1,4 +1,4 @@
-/// LSSTnamespace
+/// lsstnamespace
 ///
 /// Copyright 2013 Kitware Inc.
 /// Apache 2.0 License
@@ -199,6 +199,7 @@ window.LSSTGlobal = (function () {
         page = page || 1;
 
         var uri = "https://api.github.com/orgs/" + org + "/repos?"
+                + "&access_token="
                 + "&per_page=100"
                 + "&page="+page;
 
@@ -376,7 +377,7 @@ window.LSSTGlobal = (function () {
   that.getMembersFromOneOrg = function (org) {
 
       var uri = 'https://api.github.com/orgs/' + org + '/members?'
-                + "&access_token=b200f47521b2b51309a8baf7f3e5e2fdb73ab69a";
+                + "&access_token=";
 
       var lastMemberDateChange = LSSTGlobal.getLastMembersChangeDateInCache(org);
 
@@ -504,7 +505,7 @@ window.LSSTGlobal = (function () {
 
         var uri = "https://api.github.com/orgs/" + org + "/members?"
                 + "&callback=?"
-                + "&access_token=b200f47521b2b51309a8baf7f3e5e2fdb73ab69a";
+                + "&access_token=";
 
         $.getJSON(uri, function (result) {
 
@@ -528,7 +529,7 @@ window.LSSTGlobal = (function () {
                 + "&callback=?"
                 + "&per_page=100"
                 + "&page="+page
-                + "&access_token=b200f47521b2b51309a8baf7f3e5e2fdb73ab69a";
+                + "&access_token=";
 
         $.getJSON(uri, function (result) {
 
