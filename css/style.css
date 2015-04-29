@@ -212,11 +212,11 @@ li.repo h3 {
   border-right-color: #ffffff;
 }
 
-.repo.biology:after {
+.repo.simulations:after {
   border-right-color: #0080b0;
 }
 
-.repo.translational:after {
+.repo.dm:after {
   border-right-color: #6aad2d;
 }
 
@@ -224,12 +224,12 @@ li.repo h3 {
   border-right-color: #777777;
 }
 
-div.categoryheader.biology {
+div.categoryheader.simulations {
   background: #0080b0;
   color: #0080b0;
 }
 
-div.categoryheader.translational {
+div.categoryheader.dm {
   background: #6aad2d;
   color: #6aad2d;
 }
