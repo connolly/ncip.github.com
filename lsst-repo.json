@@ -1,27 +1,27 @@
 var lsst_repos = [
   {
     "full_name":"LSST/sims_catUtils",
-    "group":"Catalog Simulations"
+    "group":"CatalogSimulations"
   },
   {
     "full_name":"LSST/sims_catalogs_generation",
-    "group":"Catalog Simulations"
+    "group":"CatalogSimulations"
   },
   {
     "full_name":"LSST/sims_catalogs_measures",
-    "group":"Catalog Simulations"
+    "group":"CatalogSimulations"
   },
   {
     "full_name":"LSST/sims_coordUtils",
-    "group":"Catalog Simulations"
+    "group":"CatalogSimulations"
   },
   {
     "full_name":"LSST/sims_data",
-    "group":"Catalog Simulations"
+    "group":"CatalogSimulations"
   },
   {
     "full_name":"LSST/sims_dustmaps",
-    "group":"Catalog Simulations"
+    "group":"CatalogSimulations"
   },
   {
     "full_name":"LSST/sims_maf",
@@ -33,26 +33,26 @@ var lsst_repos = [
   },
   {
     "full_name":"LSST/sims_photUtils",
-    "group":"Catalog Simulations"
+    "group":"CatalogSimulations"
   },
   {
     "full_name":"LSST/sims_sed_library",
-    "group":"Catalog Simulations"
+    "group":"CatalogSimulations"
   },
   {
     "full_name":"LSST/sims_selfcal",
-    "group":"Catalog Simulations"
+    "group":"CatalogSimulations"
   },
   {
     "full_name":"LSST/sims_utils",
-    "group":"Catalog Simulations"
+    "group":"CatalogSimulations"
   },
   {
     "full_name":"LSST/sncosmo",
-    "group":"Catalog Simulations"
+    "group":"CatalogSimulations"
   },
   {
     "full_name":"LSST/throughputs",
-    "group":"Catalog Simulations"
+    "group":"CatalogSimulations"
   },
 ];
