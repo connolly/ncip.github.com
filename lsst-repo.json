@@ -3,5 +3,8 @@ var ncip_repos = [
     "full_name": "LSST/sims_catUtils",
     "group": "Catalog Simulations"
   },
- 
+  {
+    "full_name": "LSST/sims_catalogs_measures",
+    "group": "Catalog Simulations"
+  },
 ];
