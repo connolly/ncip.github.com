@@ -1,6 +1,6 @@
 var lsst_groups = [
   {
-    "name":"CatalogSimulations",
+    "name":"Catalog Simulations",
     "description":"Tools for simulating the LSST catalogs",
     "category":"simulations"
   },
