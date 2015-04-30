@@ -1,7 +1,0 @@
-var ncip_repos = [
-  {
-    "full_name": "LSST/sims_catUtils",
-    "group": "Catalog Simulations"
-  },
- 
-];
