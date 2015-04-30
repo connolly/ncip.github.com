@@ -221,7 +221,11 @@ li.repo h3 {
 }
 
 .repo.telescope:after {
-  border-right-color: #6aad2d;
+  border-right-color: #8f8f8f;
+}
+
+.repo.epo:after {
+  border-right-color: #990000;
 }
 
 div.categoryheader.simulations {
@@ -235,8 +239,13 @@ div.categoryheader.dm {
 }
 
 div.categoryheader.telescope {
-  background: #6aad2d;
-  color: #6aad2d;
+  background: #8f8f8f;
+  color: #8f8f8f;
+}
+
+div.categoryheader.epo {
+  background: #990000;
+  color: #990000;
 }
 
 @keyframes small-swing { 0% { margin-top: 0px } 50% { margin-top: -10px } 100% { margin-top: 0px } }

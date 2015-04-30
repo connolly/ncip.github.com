@@ -55,45 +55,41 @@ var lsst_repos = [
     "full_name":"lsst/throughputs",
     "group":"Catalog Simulations"
   },
-   {
-    "full_name":"",
-    "group":"Database"
-  },
   {
     "full_name":"lsst/db",
-    "group":"Database"
+    "group":"Data Management"
   },
   {
     "full_name":"lsst/dbserv",
-    "group":"Database"
+    "group":"Data Management"
   },
   {
     "full_name":"lsst/imgserv",
-    "group":"Database"
+    "group":"Data Management"
   },
   {
     "full_name":"lsst/metaserv",
-    "group":"Database"
+    "group":"Data Management"
   },
   {
     "full_name":"lsst/partition",
-    "group":"Database"
+    "group":"Data Management"
   },
   {
     "full_name":"lsst/qserv",
-    "group":"Database"
+    "group":"Data Management"
   },
   {
     "full_name":"lsst/qserv_distrib",
-    "group":"Database"
+    "group":"Data Management"
   },
   {
     "full_name":"lsst/sphgeom",
-    "group":"Database"
+    "group":"Data Management"
   },
   {
     "full_name":"lsst/webserv",
-    "group":"Database"
+    "group":"Data Management"
   },
   {
     "full_name":"lsst/Dc2Report",
