@@ -21,12 +21,12 @@ var lsst_groups = [
   },
     {
     "name":"EPO",
-    "description":" LSST Education and Public Outreach"
+	"description":" LSST Education and Public Outreach",
     "category":"epo"
   },
   {
     "name":" Telescope & Site ",
-    "description":" LSST Telescope and Site"
+    "description":" LSST Telescope and Site",
     "category":"telescope"
   },
   {
