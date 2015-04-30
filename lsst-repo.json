@@ -55,4 +55,44 @@ var lsst_repos = [
     "full_name":"lsst/throughputs",
     "group":"CatalogSimulations"
   },
+   {
+    "full_name":"",
+    "group":"Database"
+  },
+  {
+    "full_name":"lsst/db",
+    "group":"Database"
+  },
+  {
+    "full_name":"lsst/dbserv",
+    "group":"Database"
+  },
+  {
+    "full_name":"lsst/imgserv",
+    "group":"Database"
+  },
+  {
+    "full_name":"lsst/metaserv",
+    "group":"Database"
+  },
+  {
+    "full_name":"lsst/partition",
+    "group":"Database"
+  },
+  {
+    "full_name":"lsst/qserv",
+    "group":"Database"
+  },
+  {
+    "full_name":"lsst/qserv_distrib",
+    "group":"Database"
+  },
+  {
+    "full_name":"lsst/sphgeom",
+    "group":"Database"
+  },
+  {
+    "full_name":"lsst/webserv",
+    "group":"Database"
+  },
 ];
