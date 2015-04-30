@@ -16,15 +16,18 @@ var lsst_groups = [
   },
   {
     "name":"Database",
-    "description":"LSST Database and Data Access"
+    "description":"LSST Database and Data Access",
+    "category":"dm"
   },
     {
     "name":"EPO",
     "description":" LSST Education and Public Outreach"
+    "category":"epo"
   },
   {
     "name":" Telescope & Site ",
-    "description":" LSST Telescope and Site team"
+    "description":" LSST Telescope and Site"
+    "category":"telescope"
   },
   {
     "name":"Additional repositories",

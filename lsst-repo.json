@@ -57,39 +57,39 @@ var lsst_repos = [
   },
   {
     "full_name":"lsst/db",
-    "group":"Data Management"
+    "group":"Database"
   },
   {
     "full_name":"lsst/dbserv",
-    "group":"Data Management"
+    "group":"Database"
   },
   {
     "full_name":"lsst/imgserv",
-    "group":"Data Management"
+    "group":"Database"
   },
   {
     "full_name":"lsst/metaserv",
-    "group":"Data Management"
+    "group":"Database"
   },
   {
     "full_name":"lsst/partition",
-    "group":"Data Management"
+    "group":"Database"
   },
   {
     "full_name":"lsst/qserv",
-    "group":"Data Management"
+    "group":"Database"
   },
   {
     "full_name":"lsst/qserv_distrib",
-    "group":"Data Management"
+    "group":"Database"
   },
   {
     "full_name":"lsst/sphgeom",
-    "group":"Data Management"
+    "group":"Database"
   },
   {
     "full_name":"lsst/webserv",
-    "group":"Data Management"
+    "group":"Database"
   },
   {
     "full_name":"lsst/Dc2Report",
