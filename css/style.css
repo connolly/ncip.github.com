@@ -221,7 +221,7 @@ li.repo h3 {
 }
 
 .repo.telescope:after {
-  border-right-color: #777777;
+  border-right-color: #6aad2d;
 }
 
 div.categoryheader.simulations {
@@ -235,8 +235,8 @@ div.categoryheader.dm {
 }
 
 div.categoryheader.telescope {
-  background: #777777;
-  color: #777777;
+  background: #6aad2d;
+  color: #6aad2d;
 }
 
 @keyframes small-swing { 0% { margin-top: 0px } 50% { margin-top: -10px } 100% { margin-top: 0px } }
