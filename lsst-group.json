@@ -21,7 +21,7 @@ var lsst_groups = [
   },
     {
     "name":"EPO",
-	"description":" LSST Education and Public Outreach",
+    "description":" LSST Education and Public Outreach",
     "category":"epo"
   },
   {
